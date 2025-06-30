@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste das 5 Linguagens do Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Descubra Sua Linguagem do Amor</h1>
+            <p class="subtitle">Baseado no livro "As 5 Linguagens do Amor" de Gary Chapman</p>
+        </header>
+
+        <div id="intro" class="section">
+            <div class="intro-content">
+                <h2>Como funciona?</h2>
+                <p>Este teste rápido irá ajudá-lo a identificar sua linguagem do amor predominante. Para cada par de afirmações, escolha aquela que melhor descreve você, mesmo que nenhuma seja perfeita.</p>
+                
+                <div class="love-languages">
+                    <h3>As 5 Linguagens do Amor:</h3>
+                    <div class="languages-grid">
+                        <div class="language-card">
+                            <h4>💬 Palavras de Afirmação</h4>
+                            <p>Elogios, encorajamento e palavras de apreço</p>
+                        </div>
+                        <div class="language-card">
+                            <h4>⏰ Tempo de Qualidade</h4>
+                            <p>Atenção total e atividades significativas juntos</p>
+                        </div>
+                        <div class="language-card">
+                            <h4>🎁 Receber Presentes</h4>
+                            <p>Presentes significativos que simbolizam carinho</p>
+                        </div>
+                        <div class="language-card">
+                            <h4>🤝 Atos de Serviço</h4>
+                            <p>Ações práticas e ajuda com responsabilidades</p>
+                        </div>
+                        <div class="language-card">
+                            <h4>🤗 Toque Físico</h4>
+                            <p>Abraços, carícias e proximidade física</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="startTest" class="btn-primary">Iniciar Teste</button>
+            </div>
+        </div>
+
+        <div id="test" class="section hidden">
+            <div class="progress-bar">
+                <div id="progress" class="progress-fill"></div>
+            </div>
+            <div class="question-counter">
+                <span id="currentQuestion">1</span> de <span id="totalQuestions">10</span>
+            </div>
+
+            <div id="questionContainer">
+                <!-- Perguntas serão inseridas aqui pelo JavaScript -->
+            </div>
+
+            <div class="navigation">
+                <button id="prevBtn" class="btn-secondary" disabled>Anterior</button>
+                <button id="nextBtn" class="btn-primary" disabled>Próxima</button>
+                <button id="finishBtn" class="btn-primary hidden">Ver Resultado</button>
+            </div>
+        </div>
+
+        <div id="result" class="section hidden">
+            <h2>Seu Resultado</h2>
+            <div id="resultContent">
+                <!-- Resultado será inserido aqui pelo JavaScript -->
+            </div>
+            <button id="restartBtn" class="btn-secondary">Refazer Teste</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Baseado no trabalho de Gary Chapman - "As 5 Linguagens do Amor"</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
